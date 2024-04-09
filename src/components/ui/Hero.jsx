@@ -51,13 +51,13 @@ const Hero = () => {
                             <span>
                                 <i className="ri-apps-2-line"></i>
                             </span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Eveniet aliquam illo sint ipsum at ipsa dolores molestiae,
-                            repellat nihil dolor? Nisi recusandae velit earum soluta.
+                            Builiding a project my client love have allways my passion.
+                            Being i web development industry for over 4years and serving more than 7milion happy client worldwide.
+                            I'm allways motivated to do more!
                         </p>
                         <div className=' flex gap-9 items-center mt-14'>
                             <span
-                             className=' text-smallTextColor text-[16px] font-[500]'>
+                                className=' text-smallTextColor text-[16px] font-[500]'>
                                 Follow me
                             </span>
                             <span >
@@ -94,8 +94,8 @@ const Hero = () => {
                     </div>
                     {/* == Hero image end ======= */}
                     {/* == Hero content right ======= */}
-                    <div 
-                    className=' md:basis-1/5 flex justify-between text-center mt-10 flex-wrap gap-3 md:mt-0 md:flex-col md:justify-end md:text-end'>
+                    <div
+                        className=' md:basis-1/5 flex justify-between text-center mt-10 flex-wrap gap-3 md:mt-0 md:flex-col md:justify-end md:text-end'>
                         <div className="mb-10">
                             <h2 className=' text-headingColor font-[700] text-[32px]'>
                                 <CountUp start={0} end={6} duration={2} suffix='+' />

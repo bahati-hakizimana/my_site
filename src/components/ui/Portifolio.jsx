@@ -17,6 +17,7 @@ const Portifolio = () => {
                     <button className=' text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>All</button>
                     <button className=' text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>Web design</button>
                     <button className=' text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>Ui/Ux</button>
+                    <button className=' text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>Linux/Network</button>
                 </div>
             </div>
 
