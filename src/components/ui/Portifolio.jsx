@@ -24,13 +24,25 @@ const Portifolio = () => {
             <div className=' flex items-center gap-4 flex-wrap mt-12'>
                 {
                     portfolios.map((portfolio, index) => (
-                        <div key={index} className='group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]'>
+                        <div key={index} data-aos="fade-zoom-in" data-aos-delay="50" data-aos-duration="1000" className='group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]'>
                             <figure>
                                 <img className=' rounded-[8px]' src={portfolio.imgUrl} alt="" />
                             </figure>
+
+                            <div className="w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block">
+                                <div className='flex w-full h-full items-center justify-center '>
+                                    <button className=' text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in divide-neutral-200' >See details</button>
+                                </div>
+                            </div>
                         </div>
                     ))
                 }
+            </div>
+
+            <div className="text-center mt-6">
+
+            <button className=' text-white bg-primaryColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in divide-neutral-200' >Load More</button>
+
             </div>
         </div>
     </section>

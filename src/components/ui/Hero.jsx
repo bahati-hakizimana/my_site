@@ -40,7 +40,8 @@ const Hero = () => {
                             </a>
                             <a href="#poetifolio"
                                 className=' text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor'>
-                                See portifolio
+                                    <i class="ri-file-download-line"></i>
+                                Download my Resume 
                             </a>
                         </div>
                         <p
