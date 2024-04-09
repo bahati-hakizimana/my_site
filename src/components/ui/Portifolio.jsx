@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import portfolios from '../../assets/data/PortifolioData';
+
 import Model from './Model';
 
 const Portifolio = () => {

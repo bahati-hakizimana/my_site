@@ -1,6 +1,7 @@
 import React from 'react'
 
 import pxc2 from '../../assets/images/pxc2.png'
+import bahatiresume from '../../assets/images/bahatiresume.pdf';
 import CountUp from 'react-countup'
 
 const Hero = () => {
@@ -38,11 +39,11 @@ const Hero = () => {
 
                                 </button>
                             </a>
-                            <a href="#poetifolio"
-                                className='flex gap-2 text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor hover:py-2 hover:rounded-[8px] hover:px-4 hover:bg-primaryColor hover:text-white'>
-                                    <i class="ri-file-download-line"></i>
-                                Download my Resume 
+                            <a href={bahatiresume} download="bahatiresume.pdf" className='flex gap-2 text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor hover:py-2 hover:rounded-[8px] hover:px-4 hover:bg-primaryColor hover:text-white'>
+                                <i className="ri-file-download-line"></i>
+                                Download my Resume
                             </a>
+
                         </div>
                         <p
                             data-aos="fade-up"
