@@ -6,12 +6,13 @@ import project04 from '../images/project4.png';
 import project05 from '../images/project05.png';
 import project06 from '../images/project06.png';
 import project07 from '../images/project07.png';
+import project08 from '../images/project08.png';
 
 const portfolios = [
     {
         id: "01",
         imgUrl: project01,
-        category: "web desgn",
+        category: "web design",
         title: "carRental",
         description: "CarRental allows users to book or rent a car and pay directly through the FileSystem",
         technologies: ["Javascript", "Laravel", "Tailwindcss", "Html", "css", "Mysql"],
@@ -29,7 +30,7 @@ const portfolios = [
     {
         id: "03",
         imgUrl: project03,
-        category: "web design",
+        category: "ui/ux",
         title: "KTS Portfolio",
         description: "This system is KTS Ltd portfolio. It shows all descriptions of that company. It allows a user to chat with them, subscribe to newsletters, talk to their pharmacist, contact them, visit them. It is modern.",
         technologies: ["Javascript", "Golang", "Tailwindcss", "Reactjs", "MongoDb"],
@@ -38,7 +39,7 @@ const portfolios = [
     {
         id: "04",
         imgUrl: project04,
-        category: "web design",
+        category: "ui/ux",
         title: "KTS Portfolio",
         description: "This system is KTS Ltd portfolio. It shows all descriptions of that company. It allows a user to chat with them, subscribe to newsletters, talk to their pharmacist, contact them, visit them. It is modern.",
         technologies: ["Javascript", "Golang", "Tailwindcss", "Reactjs", "MongoDb"],
@@ -68,6 +69,15 @@ const portfolios = [
         category: "web design",
         title: "E-commerce shopfy dashboard",
         description: "This system is Ecommerce-admin-dashboard .",
+        technologies: ["Javascript", "Golang", "Tailwindcss", "Reactjs", "MongoDb"],
+        siteUrl: "https://unique-swan-92fb6a.netlify.app/",
+    },
+    {
+        id: "08",
+        imgUrl: project08,
+        category: "web design",
+        title: "My first website",
+        description: "This is the website I developed during my studies.",
         technologies: ["Javascript", "Golang", "Tailwindcss", "Reactjs", "MongoDb"],
         siteUrl: "https://unique-swan-92fb6a.netlify.app/",
     }

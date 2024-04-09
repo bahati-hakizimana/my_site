@@ -39,7 +39,7 @@ const Hero = () => {
                                 </button>
                             </a>
                             <a href="#poetifolio"
-                                className=' text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor'>
+                                className='flex gap-2 text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor hover:py-2 hover:rounded-[8px] hover:px-4 hover:bg-primaryColor hover:text-white'>
                                     <i class="ri-file-download-line"></i>
                                 Download my Resume 
                             </a>

@@ -1,7 +1,34 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import portfolios from '../../assets/data/PortifolioData';
 
 const Portifolio = () => {
+    const [nextItems, setNextItems] = useState(6);
+    const [data, setData]            = useState(portfolios)
+    const all = 'all';
+
+    const [selectTab, setSelectTab]   = useState(all)
+
+    const LoadMoreHandle= () => {
+        setNextItems(prev=> prev + 2)
+    }
+
+    useEffect (() => {
+        if(selectTab==='all'){
+
+            setData(portfolios)
+
+        }
+
+        if(selectTab==='web-design'){
+            const filteredData = portfolios.filter(item=>item.category==='web design')
+            setData(filteredData)
+        }
+        if(selectTab==='ux-disign'){
+            const filteredData = portfolios.filter(item=>item.category==='ui/ux')
+            setData(filteredData)
+        }
+        
+    }, [selectTab])
   return (
     <section id="portifolio">
         <div className="container">
@@ -14,16 +41,16 @@ const Portifolio = () => {
                 {/* ======== Project Selection ========== */}
 
                 <div className="flex gap-3">
-                    <button className=' text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>All</button>
-                    <button className=' text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>Web design</button>
-                    <button className=' text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>Ui/Ux</button>
-                    <button className=' text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>Linux/Network</button>
+                    <button onClick={() => setSelectTab('all')} className=' text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>All</button>
+                    <button onClick={() => setSelectTab('web-design')} className=' text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>Web design</button>
+                    <button onClick={() => setSelectTab('ux-disign')} className=' text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>Ui/Ux</button>
+                    <button onClick={() => setSelectTab('all')} className=' text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>Linux/Network</button>
                 </div>
             </div>
 
             <div className=' flex items-center gap-4 flex-wrap mt-12'>
                 {
-                    portfolios.map((portfolio, index) => (
+                    data.slice(0, nextItems).map((portfolio, index) => (
                         <div key={index} data-aos="fade-zoom-in" data-aos-delay="50" data-aos-duration="1000" className='group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]'>
                             <figure>
                                 <img className=' rounded-[8px]' src={portfolio.imgUrl} alt="" />
@@ -41,7 +68,14 @@ const Portifolio = () => {
 
             <div className="text-center mt-6">
 
-            <button className=' text-white bg-primaryColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in divide-neutral-200' >Load More</button>
+                {
+                    nextItems<data.length && portfolios.length> 6 &&(
+                        <button onClick={LoadMoreHandle} className=' text-white bg-primaryColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in divide-neutral-200' >Load More</button>
+                    )
+                    
+                }
+
+            
 
             </div>
         </div>
