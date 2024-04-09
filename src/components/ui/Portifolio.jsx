@@ -1,12 +1,21 @@
 import React,{useState, useEffect} from 'react';
 import portfolios from '../../assets/data/PortifolioData';
+import Model from './Model';
 
 const Portifolio = () => {
     const [nextItems, setNextItems] = useState(6);
-    const [data, setData]            = useState(portfolios)
+    const [data, setData]            = useState(portfolios);
     const all = 'all';
 
-    const [selectTab, setSelectTab]   = useState(all)
+    const [showModel, setShowModel]    = useState(false);
+
+    const [selectTab, setSelectTab]   = useState(all);
+    const [activeID, setActiveId]     = useState(null)
+
+    const HandleShowModel = id => {
+        setShowModel(true)
+        setActiveId(id)
+    }
 
     const LoadMoreHandle= () => {
         setNextItems(prev=> prev + 2)
@@ -58,7 +67,7 @@ const Portifolio = () => {
 
                             <div className="w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block">
                                 <div className='flex w-full h-full items-center justify-center '>
-                                    <button className=' text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in divide-neutral-200' >See details</button>
+                                    <button onClick={() => HandleShowModel(portfolio.id)} className=' text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in divide-neutral-200' >See details</button>
                                 </div>
                             </div>
                         </div>
@@ -79,6 +88,10 @@ const Portifolio = () => {
 
             </div>
         </div>
+
+        {
+            showModel && <Model setShowModel={setShowModel} activeID={activeID} />
+        }
     </section>
   );
 };
