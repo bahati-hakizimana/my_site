@@ -3,10 +3,10 @@ import project01 from '../images/project1.png';
 import project02 from '../images/project2.png';
 import project03 from '../images/project3.png';
 import project04 from '../images/project4.png';
-import project05 from '../images/project05.png';
+import project08 from '../images/project08.png';
 import project06 from '../images/project06.png';
 import project07 from '../images/project07.png';
-import project08 from '../images/project08.png';
+import project09 from '../images/project09.png';
 
 const portfolios = [
     {
@@ -46,13 +46,14 @@ const portfolios = [
         siteUrl: "https://kts.fly.dev/",
     },
     {
-        id: "05",
-        imgUrl: project05,
+        id: "08",
+        imgUrl: project08,
         category: "web design",
         title: "E-commerce Dashboard",
         description: "This system is Ecommerce-admin-dashboard .",
         technologies: ["Javascript", "Golang", "Tailwindcss", "Reactjs", "MongoDb"],
-        siteUrl: "https://the-best-admin-dashboard.netlify.app/ecommerce",
+        siteUrl: "https://nostalgic-dijkstra-40cb6c.netlify.app/",
+        
     },
     {
         id: "06",
@@ -61,7 +62,7 @@ const portfolios = [
         title: "E-commerce Dashboard",
         description: "This system is Ecommerce-admin-dashboard .",
         technologies: ["Javascript", "Golang", "Tailwindcss", "Reactjs", "MongoDb"],
-        siteUrl: "https://the-best-admin-dashboard.netlify.app/ecommerce",
+        siteUrl: "https://the-best-admin-dashboard.netlify.app/",
     },
     {
         id: "07",
@@ -73,13 +74,14 @@ const portfolios = [
         siteUrl: "https://unique-swan-92fb6a.netlify.app/",
     },
     {
-        id: "08",
-        imgUrl: project08,
+        id: "09",
+        imgUrl: project09,
         category: "web design",
         title: "My first website",
         description: "This is the website I developed during my studies.",
         technologies: ["Javascript", "Golang", "Tailwindcss", "Reactjs", "MongoDb"],
-        siteUrl: "https://unique-swan-92fb6a.netlify.app/",
+        siteUrl: "https://the-best-admin-dashboard.netlify.app/",
+        
     }
     // {
     //     id: "04",
