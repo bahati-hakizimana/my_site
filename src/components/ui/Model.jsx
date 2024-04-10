@@ -46,6 +46,8 @@ const Model = ({activeID, setShowModel}) => {
   
 </div>
 
+//<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15949.975096336962!2d30.085668927940382!3d-1.9559207527874414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca6f9a9f85475%3A0x81d16dcc3c7b2f4b!2sAUCA%20Gishushu%20Campus!5e0!3m2!1sen!2srw!4v1712754924507!5m2!1sen!2srw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
   )
 }
 
