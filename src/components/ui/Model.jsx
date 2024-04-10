@@ -7,7 +7,7 @@ const Model = ({activeID, setShowModel}) => {
   return (
     <div className=' w-full h-full fixed  top-0 left-0 z-10 bg-headingColor bg-opacity-40'>
 
-    <div className='max-w-[400px] bg-white rounded-[8px] absolute top-1/2 left-1/2 z-20 transform -translate-x-1/2 -translate-y-1/2 p-5 mt-5'>
+    <div className=' w-11/12 md:max-w-[600px] max-w-[400px] md:w-full bg-white rounded-[8px] absolute top-1/2 left-1/2 z-20 transform -translate-x-1/2 -translate-y-1/2 p-5 mt-5'>
         <div>
         <figure>
             <img className=' rounded-[8px]' src={portifolio.imgUrl} alt="" />
@@ -32,9 +32,16 @@ const Model = ({activeID, setShowModel}) => {
                 ))
             }
         </div>
+        <div>
         <a href={portifolio.siteUrl}>
             <button className=' bg-primaryColor text-white my-8 font-[500] py-2 px-4 rounded-[8px] hover:bg-headingColor ease-in duration-300'>Live site</button>
         </a>
+
+        </div>
+
+         <button onClick={() => setShowModel(false)} className=' flex items-center justify-center rounded-[3px] leading-0 cursor-pointer w-[1.8rem] h-[1.8rem] bg-[black] text-white absolute top-[1.5rem] right-[1.7rem] text-[25px]'>&times;</button>
+        
+
     </div>
   
 </div>
