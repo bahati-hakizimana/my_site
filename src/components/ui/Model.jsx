@@ -7,7 +7,7 @@ const Model = ({activeID, setShowModel}) => {
   return (
     <div className=' w-full h-full fixed  top-0 left-0 z-10 bg-headingColor bg-opacity-40'>
 
-    <div className='max-w-[600px] bg-white rounded-[8px] absolute top-1/2 left-1/2 z-20 transform -translate-x-1/2 -translate-y-1/2 p-5'>
+    <div className='max-w-[400px] bg-white rounded-[8px] absolute top-1/2 left-1/2 z-20 transform -translate-x-1/2 -translate-y-1/2 p-5 mt-5'>
         <div>
         <figure>
             <img className=' rounded-[8px]' src={portifolio.imgUrl} alt="" />
