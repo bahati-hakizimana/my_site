@@ -1,7 +1,7 @@
 import React from 'react'
 
 import pxc2 from '../../assets/images/pxc2.png'
-import bahatiresume from '../../assets/images/bahatiresume.pdf';
+import bahati_resume from '../../assets/images/bahati_resume.pdf';
 import CountUp from 'react-countup'
 
 const Hero = () => {
@@ -39,7 +39,7 @@ const Hero = () => {
 
                                 </button>
                             </a>
-                            <a href={bahatiresume} download="bahatiresume.pdf" className='flex gap-2 text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor hover:py-2 hover:rounded-[8px] hover:px-4 hover:bg-primaryColor hover:text-white'>
+                            <a href={bahati_resume} download="bahatiresume.pdf" className='flex gap-2 text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor hover:py-2 hover:rounded-[8px] hover:px-4 hover:bg-primaryColor hover:text-white'>
                                 <i className="ri-file-download-line"></i>
                                 Download my Resume
                             </a>
@@ -100,7 +100,7 @@ const Hero = () => {
                         className=' md:basis-1/5 flex justify-between text-center mt-10 flex-wrap gap-3 md:mt-0 md:flex-col md:justify-end md:text-end'>
                         <div className="mb-10">
                             <h2 className=' text-headingColor font-[700] text-[32px]'>
-                                <CountUp start={0} end={6} duration={2} suffix='+' />
+                                <CountUp start={0} end={4} duration={2} suffix='+' />
                             </h2>
                             <h4 className=' text-headingColor font-[600] text-[18px]'>Years of experience</h4>
                         </div>
