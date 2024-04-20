@@ -1,7 +1,7 @@
 import React from 'react'
 
 import pxc2 from '../../assets/images/pxc2.png'
-import My_resume from '../../assets/images/My_resume.pdf';
+import My_resume1 from '../../assets/images/My_resume1.pdf';
 import CountUp from 'react-countup'
 
 const Hero = () => {
@@ -39,7 +39,7 @@ const Hero = () => {
 
                                 </button>
                             </a>
-                            <a href={My_resume} download="bahatiresume.pdf" className='flex gap-2 text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor hover:py-2 hover:rounded-[8px] hover:px-4 hover:bg-primaryColor hover:text-white'>
+                            <a href={My_resume1} download="bahatiresume.pdf" className='flex gap-2 text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor hover:py-2 hover:rounded-[8px] hover:px-4 hover:bg-primaryColor hover:text-white'>
                                 <i className="ri-file-download-line"></i>
                                 Download my Resume
                             </a>
